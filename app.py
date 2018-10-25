@@ -13,8 +13,8 @@ def save(event):
 
 # text area to write
 text1 = Text(window, bg = 'gray1', fg = 'white', insertbackground = 'white')
-text1.bind('<Return>', save)
-text1.bind('<Escape>', lambda e: window.destroy())
+text1.bind('<Return>', save) # save file when press enter
+text1.bind('<Escape>', lambda e: window.destroy()) # close window when press escape
 text1.grid(row = 2, column = 0, columnspan = 50, padx = 5, pady = 5)
 
 window.mainloop()
